@@ -29,6 +29,7 @@ class YoloFollower(Node):
         self.info_topic = f'{ns}/oakd/rgb/camera_info'
 
         self.cmd_vel_pub = self.create_publisher(Twist, f'{ns}/cmd_vel', 10)
+        self.position_pub = self.create_publisher(PointStamped, '/lead_car/position_3d', 10)
 
         self.rgb_image = None
         self.depth_image = None
@@ -117,7 +118,8 @@ class YoloFollower(Node):
             if not (0.3 < z < 5.0):
                 self.get_logger().warn("Invalid depth value")
                 continue
-
+            
+            # 3D 좌표 계산
             fx, fy = self.K[0, 0], self.K[1, 1]
             cx, cy = self.K[0, 2], self.K[1, 2]
             X = (u - cx) * z / fx
@@ -140,15 +142,19 @@ class YoloFollower(Node):
             twist.linear.x = speed
 
             # 속도 버블리시
-            self.cmd_vel_pub.publish(twist)
+            # self.cmd_vel_pub.publish(twist)
             
             # 화면 출력
             self.get_logger().info(f"[car] z={z:.2f}m → speed={speed:.2f} m/s")
 
             pt_camera = PointStamped()
-            pt_camera.header.stamp = Time().to_msg()
+            pt_camera.header.stamp = self.get_clock().now().to_msg()
             pt_camera.header.frame_id = self.camera_frame
-            pt_camera.point.x, pt_camera.point.y, pt_camera.point.z = X, Y, Z
+            pt_camera.point.x = X
+            pt_camera.point.y = Y
+            pt_camera.point.z = Z
+
+            self.position_pub.publish(pt_camera)
 
             # try:
             #     pt_map = self.tf_buffer.transform(pt_camera, 'map', timeout=Duration(seconds=1.0))

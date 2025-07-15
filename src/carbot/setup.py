@@ -51,6 +51,8 @@ setup(
             'depth_to_3d_2 = day2.3_3_b_depth_to_3d:main',
             'depth_to_nav_goal = day2.3_3_c_depth_to_nav_goal:main',
             'nav_to_car = day2.3_3_d_nav_to_car:main',
+            'relvel_and_velstop = carbot.RelvelAndVelstop:main',
+            'fake_position_publisher = carbot.test.fake_position_publisher:main',
         ],
     },
 )

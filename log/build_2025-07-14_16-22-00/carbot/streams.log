@@ -1,0 +1,74 @@
+[0.380s] Invoking command in '/home/rokey/rokey4_C1_ws/src/carbot': PYTHONPATH=/home/rokey/rokey4_C1_ws/build/carbot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rokey/rokey4_C1_ws/install/carbot/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/carbot build --build-base /home/rokey/rokey4_C1_ws/build/carbot/build install --record /home/rokey/rokey4_C1_ws/build/carbot/install.log --single-version-externally-managed install_data
+[0.525s] running egg_info
+[0.525s] writing ../../build/carbot/carbot.egg-info/PKG-INFO
+[0.526s] writing dependency_links to ../../build/carbot/carbot.egg-info/dependency_links.txt
+[0.527s] writing entry points to ../../build/carbot/carbot.egg-info/entry_points.txt
+[0.527s] writing requirements to ../../build/carbot/carbot.egg-info/requires.txt
+[0.527s] writing top-level names to ../../build/carbot/carbot.egg-info/top_level.txt
+[0.528s] reading manifest file '../../build/carbot/carbot.egg-info/SOURCES.txt'
+[0.528s] writing manifest file '../../build/carbot/carbot.egg-info/SOURCES.txt'
+[0.529s] running build
+[0.529s] running build_py
+[0.529s] copying day2/3_2_e_mail_delivery.py -> /home/rokey/rokey4_C1_ws/build/carbot/build/lib/day2
+[0.529s] copying day2/3_3_b_depth_to_3d.py -> /home/rokey/rokey4_C1_ws/build/carbot/build/lib/day2
+[0.529s] copying day2/3_2_b_nav_through_poses.py -> /home/rokey/rokey4_C1_ws/build/carbot/build/lib/day2
+[0.530s] copying day2/3_2_c_follow_waypoints.py -> /home/rokey/rokey4_C1_ws/build/carbot/build/lib/day2
+[0.530s] copying day2/3_3_b_depth_to_3d_ts.py -> /home/rokey/rokey4_C1_ws/build/carbot/build/lib/day2
+[0.530s] copying day2/3_3_a_depth_checker.py -> /home/rokey/rokey4_C1_ws/build/carbot/build/lib/day2
+[0.530s] copying day2/3_2_f_patrol_loop.py -> /home/rokey/rokey4_C1_ws/build/carbot/build/lib/day2
+[0.530s] copying day2/3_3_c_depth_to_nav_goal.py -> /home/rokey/rokey4_C1_ws/build/carbot/build/lib/day2
+[0.530s] copying day2/3_2_d_create_path.py -> /home/rokey/rokey4_C1_ws/build/carbot/build/lib/day2
+[0.530s] copying day2/3_2_a_nav_to_pose.py -> /home/rokey/rokey4_C1_ws/build/carbot/build/lib/day2
+[0.531s] running install
+[0.531s] running install_lib
+[0.531s] copying /home/rokey/rokey4_C1_ws/build/carbot/build/lib/day2/3_2_e_mail_delivery.py -> /home/rokey/rokey4_C1_ws/install/carbot/lib/python3.10/site-packages/day2
+[0.532s] copying /home/rokey/rokey4_C1_ws/build/carbot/build/lib/day2/3_3_b_depth_to_3d.py -> /home/rokey/rokey4_C1_ws/install/carbot/lib/python3.10/site-packages/day2
+[0.532s] copying /home/rokey/rokey4_C1_ws/build/carbot/build/lib/day2/3_2_b_nav_through_poses.py -> /home/rokey/rokey4_C1_ws/install/carbot/lib/python3.10/site-packages/day2
+[0.532s] copying /home/rokey/rokey4_C1_ws/build/carbot/build/lib/day2/3_2_c_follow_waypoints.py -> /home/rokey/rokey4_C1_ws/install/carbot/lib/python3.10/site-packages/day2
+[0.532s] copying /home/rokey/rokey4_C1_ws/build/carbot/build/lib/day2/3_3_b_depth_to_3d_ts.py -> /home/rokey/rokey4_C1_ws/install/carbot/lib/python3.10/site-packages/day2
+[0.532s] copying /home/rokey/rokey4_C1_ws/build/carbot/build/lib/day2/3_3_a_depth_checker.py -> /home/rokey/rokey4_C1_ws/install/carbot/lib/python3.10/site-packages/day2
+[0.532s] copying /home/rokey/rokey4_C1_ws/build/carbot/build/lib/day2/3_2_f_patrol_loop.py -> /home/rokey/rokey4_C1_ws/install/carbot/lib/python3.10/site-packages/day2
+[0.532s] copying /home/rokey/rokey4_C1_ws/build/carbot/build/lib/day2/3_3_c_depth_to_nav_goal.py -> /home/rokey/rokey4_C1_ws/install/carbot/lib/python3.10/site-packages/day2
+[0.532s] copying /home/rokey/rokey4_C1_ws/build/carbot/build/lib/day2/3_2_d_create_path.py -> /home/rokey/rokey4_C1_ws/install/carbot/lib/python3.10/site-packages/day2
+[0.532s] copying /home/rokey/rokey4_C1_ws/build/carbot/build/lib/day2/3_2_a_nav_to_pose.py -> /home/rokey/rokey4_C1_ws/install/carbot/lib/python3.10/site-packages/day2
+[0.532s] byte-compiling /home/rokey/rokey4_C1_ws/install/carbot/lib/python3.10/site-packages/day2/3_2_e_mail_delivery.py to 3_2_e_mail_delivery.cpython-310.pyc
+[0.533s] byte-compiling /home/rokey/rokey4_C1_ws/install/carbot/lib/python3.10/site-packages/day2/3_3_b_depth_to_3d.py to 3_3_b_depth_to_3d.cpython-310.pyc
+[0.534s] byte-compiling /home/rokey/rokey4_C1_ws/install/carbot/lib/python3.10/site-packages/day2/3_2_b_nav_through_poses.py to 3_2_b_nav_through_poses.cpython-310.pyc
+[0.534s] byte-compiling /home/rokey/rokey4_C1_ws/install/carbot/lib/python3.10/site-packages/day2/3_2_c_follow_waypoints.py to 3_2_c_follow_waypoints.cpython-310.pyc
+[0.534s] byte-compiling /home/rokey/rokey4_C1_ws/install/carbot/lib/python3.10/site-packages/day2/3_3_b_depth_to_3d_ts.py to 3_3_b_depth_to_3d_ts.cpython-310.pyc
+[0.535s] byte-compiling /home/rokey/rokey4_C1_ws/install/carbot/lib/python3.10/site-packages/day2/3_3_a_depth_checker.py to 3_3_a_depth_checker.cpython-310.pyc
+[0.536s] byte-compiling /home/rokey/rokey4_C1_ws/install/carbot/lib/python3.10/site-packages/day2/3_2_f_patrol_loop.py to 3_2_f_patrol_loop.cpython-310.pyc
+[0.537s] byte-compiling /home/rokey/rokey4_C1_ws/install/carbot/lib/python3.10/site-packages/day2/3_3_c_depth_to_nav_goal.py to 3_3_c_depth_to_nav_goal.cpython-310.pyc
+[0.538s] byte-compiling /home/rokey/rokey4_C1_ws/install/carbot/lib/python3.10/site-packages/day2/3_2_d_create_path.py to 3_2_d_create_path.cpython-310.pyc
+[0.538s] byte-compiling /home/rokey/rokey4_C1_ws/install/carbot/lib/python3.10/site-packages/day2/3_2_a_nav_to_pose.py to 3_2_a_nav_to_pose.cpython-310.pyc
+[0.538s] running install_data
+[0.538s] running install_egg_info
+[0.539s] removing '/home/rokey/rokey4_C1_ws/install/carbot/lib/python3.10/site-packages/carbot-0.0.0-py3.10.egg-info' (and everything under it)
+[0.539s] Copying ../../build/carbot/carbot.egg-info to /home/rokey/rokey4_C1_ws/install/carbot/lib/python3.10/site-packages/carbot-0.0.0-py3.10.egg-info
+[0.540s] running install_scripts
+[0.552s] Installing cap_img script to /home/rokey/rokey4_C1_ws/install/carbot/lib/carbot
+[0.553s] Installing com_yolo script to /home/rokey/rokey4_C1_ws/install/carbot/lib/carbot
+[0.553s] Installing depth_caculator script to /home/rokey/rokey4_C1_ws/install/carbot/lib/carbot
+[0.553s] Installing depth_checker script to /home/rokey/rokey4_C1_ws/install/carbot/lib/carbot
+[0.553s] Installing depth_test script to /home/rokey/rokey4_C1_ws/install/carbot/lib/carbot
+[0.553s] Installing depth_to_3d script to /home/rokey/rokey4_C1_ws/install/carbot/lib/carbot
+[0.553s] Installing depth_to_nav script to /home/rokey/rokey4_C1_ws/install/carbot/lib/carbot
+[0.553s] Installing follow_waypoints script to /home/rokey/rokey4_C1_ws/install/carbot/lib/carbot
+[0.553s] Installing mial_delivery script to /home/rokey/rokey4_C1_ws/install/carbot/lib/carbot
+[0.553s] Installing nav_through_pose script to /home/rokey/rokey4_C1_ws/install/carbot/lib/carbot
+[0.553s] Installing nav_to_person script to /home/rokey/rokey4_C1_ws/install/carbot/lib/carbot
+[0.553s] Installing nav_to_pose script to /home/rokey/rokey4_C1_ws/install/carbot/lib/carbot
+[0.553s] Installing obj_det script to /home/rokey/rokey4_C1_ws/install/carbot/lib/carbot
+[0.553s] Installing obj_det_thread script to /home/rokey/rokey4_C1_ws/install/carbot/lib/carbot
+[0.553s] Installing obj_det_track script to /home/rokey/rokey4_C1_ws/install/carbot/lib/carbot
+[0.553s] Installing obj_det_wc script to /home/rokey/rokey4_C1_ws/install/carbot/lib/carbot
+[0.553s] Installing patrol_loop script to /home/rokey/rokey4_C1_ws/install/carbot/lib/carbot
+[0.553s] Installing pub_data script to /home/rokey/rokey4_C1_ws/install/carbot/lib/carbot
+[0.553s] Installing pub_image script to /home/rokey/rokey4_C1_ws/install/carbot/lib/carbot
+[0.553s] Installing show_data script to /home/rokey/rokey4_C1_ws/install/carbot/lib/carbot
+[0.553s] Installing show_image script to /home/rokey/rokey4_C1_ws/install/carbot/lib/carbot
+[0.554s] Installing test script to /home/rokey/rokey4_C1_ws/install/carbot/lib/carbot
+[0.554s] Installing yolo_pub_wc script to /home/rokey/rokey4_C1_ws/install/carbot/lib/carbot
+[0.554s] Installing yolo_sub_wc script to /home/rokey/rokey4_C1_ws/install/carbot/lib/carbot
+[0.554s] writing list of installed files to '/home/rokey/rokey4_C1_ws/build/carbot/install.log'
+[0.567s] Invoked command in '/home/rokey/rokey4_C1_ws/src/carbot' returned '0': PYTHONPATH=/home/rokey/rokey4_C1_ws/build/carbot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rokey/rokey4_C1_ws/install/carbot/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/carbot build --build-base /home/rokey/rokey4_C1_ws/build/carbot/build install --record /home/rokey/rokey4_C1_ws/build/carbot/install.log --single-version-externally-managed install_data

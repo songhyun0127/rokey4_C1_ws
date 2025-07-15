@@ -1,0 +1,32 @@
+[0.368s] Invoking command in '/home/rokey/rokey4_C1_ws/src/carbot': PYTHONPATH=/home/rokey/rokey4_C1_ws/build/carbot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rokey/rokey4_C1_ws/install/carbot/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/carbot build --build-base /home/rokey/rokey4_C1_ws/build/carbot/build install --record /home/rokey/rokey4_C1_ws/build/carbot/install.log --single-version-externally-managed install_data
+[0.509s] running egg_info
+[0.509s] writing ../../build/carbot/carbot.egg-info/PKG-INFO
+[0.510s] writing dependency_links to ../../build/carbot/carbot.egg-info/dependency_links.txt
+[0.510s] writing entry points to ../../build/carbot/carbot.egg-info/entry_points.txt
+[0.510s] writing requirements to ../../build/carbot/carbot.egg-info/requires.txt
+[0.510s] writing top-level names to ../../build/carbot/carbot.egg-info/top_level.txt
+[0.511s] reading manifest file '../../build/carbot/carbot.egg-info/SOURCES.txt'
+[0.511s] writing manifest file '../../build/carbot/carbot.egg-info/SOURCES.txt'
+[0.511s] running build
+[0.511s] running build_py
+[0.512s] running install
+[0.512s] running install_lib
+[0.513s] running install_data
+[0.513s] running install_egg_info
+[0.514s] removing '/home/rokey/rokey4_C1_ws/install/carbot/lib/python3.10/site-packages/carbot-0.0.0-py3.10.egg-info' (and everything under it)
+[0.514s] Copying ../../build/carbot/carbot.egg-info to /home/rokey/rokey4_C1_ws/install/carbot/lib/python3.10/site-packages/carbot-0.0.0-py3.10.egg-info
+[0.515s] running install_scripts
+[0.527s] Installing cap_img script to /home/rokey/rokey4_C1_ws/install/carbot/lib/carbot
+[0.527s] Installing com_yolo script to /home/rokey/rokey4_C1_ws/install/carbot/lib/carbot
+[0.527s] Installing obj_det script to /home/rokey/rokey4_C1_ws/install/carbot/lib/carbot
+[0.527s] Installing obj_det_thread script to /home/rokey/rokey4_C1_ws/install/carbot/lib/carbot
+[0.527s] Installing obj_det_track script to /home/rokey/rokey4_C1_ws/install/carbot/lib/carbot
+[0.527s] Installing obj_det_wc script to /home/rokey/rokey4_C1_ws/install/carbot/lib/carbot
+[0.527s] Installing pub_data script to /home/rokey/rokey4_C1_ws/install/carbot/lib/carbot
+[0.527s] Installing pub_image script to /home/rokey/rokey4_C1_ws/install/carbot/lib/carbot
+[0.527s] Installing show_data script to /home/rokey/rokey4_C1_ws/install/carbot/lib/carbot
+[0.527s] Installing show_image script to /home/rokey/rokey4_C1_ws/install/carbot/lib/carbot
+[0.527s] Installing yolo_pub_wc script to /home/rokey/rokey4_C1_ws/install/carbot/lib/carbot
+[0.527s] Installing yolo_sub_wc script to /home/rokey/rokey4_C1_ws/install/carbot/lib/carbot
+[0.528s] writing list of installed files to '/home/rokey/rokey4_C1_ws/build/carbot/install.log'
+[0.541s] Invoked command in '/home/rokey/rokey4_C1_ws/src/carbot' returned '0': PYTHONPATH=/home/rokey/rokey4_C1_ws/build/carbot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rokey/rokey4_C1_ws/install/carbot/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/carbot build --build-base /home/rokey/rokey4_C1_ws/build/carbot/build install --record /home/rokey/rokey4_C1_ws/build/carbot/install.log --single-version-externally-managed install_data

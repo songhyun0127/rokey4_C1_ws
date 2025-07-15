@@ -1,0 +1,33 @@
+[0.367s] Invoking command in '/home/rokey/rokey4_C1_ws/src/carbot': PYTHONPATH=/home/rokey/rokey4_C1_ws/build/carbot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rokey/rokey4_C1_ws/install/carbot/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/carbot build --build-base /home/rokey/rokey4_C1_ws/build/carbot/build install --record /home/rokey/rokey4_C1_ws/build/carbot/install.log --single-version-externally-managed install_data
+[0.505s] running egg_info
+[0.505s] creating ../../build/carbot/carbot.egg-info
+[0.505s] writing ../../build/carbot/carbot.egg-info/PKG-INFO
+[0.505s] writing dependency_links to ../../build/carbot/carbot.egg-info/dependency_links.txt
+[0.505s] writing entry points to ../../build/carbot/carbot.egg-info/entry_points.txt
+[0.505s] writing requirements to ../../build/carbot/carbot.egg-info/requires.txt
+[0.505s] writing top-level names to ../../build/carbot/carbot.egg-info/top_level.txt
+[0.505s] writing manifest file '../../build/carbot/carbot.egg-info/SOURCES.txt'
+[0.506s] reading manifest file '../../build/carbot/carbot.egg-info/SOURCES.txt'
+[0.506s] writing manifest file '../../build/carbot/carbot.egg-info/SOURCES.txt'
+[0.506s] running build
+[0.506s] running build_py
+[0.506s] creating /home/rokey/rokey4_C1_ws/build/carbot/build
+[0.507s] creating /home/rokey/rokey4_C1_ws/build/carbot/build/lib
+[0.507s] creating /home/rokey/rokey4_C1_ws/build/carbot/build/lib/carbot
+[0.507s] copying carbot/__init__.py -> /home/rokey/rokey4_C1_ws/build/carbot/build/lib/carbot
+[0.507s] running install
+[0.507s] running install_lib
+[0.507s] creating /home/rokey/rokey4_C1_ws/install/carbot/lib/python3.10/site-packages/carbot
+[0.507s] copying /home/rokey/rokey4_C1_ws/build/carbot/build/lib/carbot/__init__.py -> /home/rokey/rokey4_C1_ws/install/carbot/lib/python3.10/site-packages/carbot
+[0.507s] byte-compiling /home/rokey/rokey4_C1_ws/install/carbot/lib/python3.10/site-packages/carbot/__init__.py to __init__.cpython-310.pyc
+[0.508s] running install_data
+[0.508s] creating /home/rokey/rokey4_C1_ws/install/carbot/share/ament_index
+[0.508s] creating /home/rokey/rokey4_C1_ws/install/carbot/share/ament_index/resource_index
+[0.508s] creating /home/rokey/rokey4_C1_ws/install/carbot/share/ament_index/resource_index/packages
+[0.508s] copying resource/carbot -> /home/rokey/rokey4_C1_ws/install/carbot/share/ament_index/resource_index/packages
+[0.508s] copying package.xml -> /home/rokey/rokey4_C1_ws/install/carbot/share/carbot
+[0.508s] running install_egg_info
+[0.509s] Copying ../../build/carbot/carbot.egg-info to /home/rokey/rokey4_C1_ws/install/carbot/lib/python3.10/site-packages/carbot-0.0.0-py3.10.egg-info
+[0.509s] running install_scripts
+[0.521s] writing list of installed files to '/home/rokey/rokey4_C1_ws/build/carbot/install.log'
+[0.534s] Invoked command in '/home/rokey/rokey4_C1_ws/src/carbot' returned '0': PYTHONPATH=/home/rokey/rokey4_C1_ws/build/carbot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rokey/rokey4_C1_ws/install/carbot/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/carbot build --build-base /home/rokey/rokey4_C1_ws/build/carbot/build install --record /home/rokey/rokey4_C1_ws/build/carbot/install.log --single-version-externally-managed install_data

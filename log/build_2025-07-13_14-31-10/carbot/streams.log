@@ -1,0 +1,37 @@
+[0.372s] Invoking command in '/home/rokey/rokey4_C1_ws/src/carbot': PYTHONPATH=/home/rokey/rokey4_C1_ws/build/carbot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rokey/rokey4_C1_ws/install/carbot/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/carbot build --build-base /home/rokey/rokey4_C1_ws/build/carbot/build install --record /home/rokey/rokey4_C1_ws/build/carbot/install.log --single-version-externally-managed install_data
+[0.513s] running egg_info
+[0.513s] writing ../../build/carbot/carbot.egg-info/PKG-INFO
+[0.514s] writing dependency_links to ../../build/carbot/carbot.egg-info/dependency_links.txt
+[0.514s] writing entry points to ../../build/carbot/carbot.egg-info/entry_points.txt
+[0.514s] writing requirements to ../../build/carbot/carbot.egg-info/requires.txt
+[0.514s] writing top-level names to ../../build/carbot/carbot.egg-info/top_level.txt
+[0.515s] reading manifest file '../../build/carbot/carbot.egg-info/SOURCES.txt'
+[0.515s] writing manifest file '../../build/carbot/carbot.egg-info/SOURCES.txt'
+[0.515s] running build
+[0.515s] running build_py
+[0.516s] copying day2/depth_test.py -> /home/rokey/rokey4_C1_ws/build/carbot/build/lib/day2
+[0.516s] running install
+[0.516s] running install_lib
+[0.517s] copying /home/rokey/rokey4_C1_ws/build/carbot/build/lib/day2/depth_test.py -> /home/rokey/rokey4_C1_ws/install/carbot/lib/python3.10/site-packages/day2
+[0.517s] byte-compiling /home/rokey/rokey4_C1_ws/install/carbot/lib/python3.10/site-packages/day2/depth_test.py to depth_test.cpython-310.pyc
+[0.518s] running install_data
+[0.518s] running install_egg_info
+[0.519s] removing '/home/rokey/rokey4_C1_ws/install/carbot/lib/python3.10/site-packages/carbot-0.0.0-py3.10.egg-info' (and everything under it)
+[0.519s] Copying ../../build/carbot/carbot.egg-info to /home/rokey/rokey4_C1_ws/install/carbot/lib/python3.10/site-packages/carbot-0.0.0-py3.10.egg-info
+[0.519s] running install_scripts
+[0.532s] Installing cap_img script to /home/rokey/rokey4_C1_ws/install/carbot/lib/carbot
+[0.532s] Installing com_yolo script to /home/rokey/rokey4_C1_ws/install/carbot/lib/carbot
+[0.532s] Installing depth_caculator script to /home/rokey/rokey4_C1_ws/install/carbot/lib/carbot
+[0.532s] Installing depth_test script to /home/rokey/rokey4_C1_ws/install/carbot/lib/carbot
+[0.532s] Installing obj_det script to /home/rokey/rokey4_C1_ws/install/carbot/lib/carbot
+[0.532s] Installing obj_det_thread script to /home/rokey/rokey4_C1_ws/install/carbot/lib/carbot
+[0.532s] Installing obj_det_track script to /home/rokey/rokey4_C1_ws/install/carbot/lib/carbot
+[0.532s] Installing obj_det_wc script to /home/rokey/rokey4_C1_ws/install/carbot/lib/carbot
+[0.532s] Installing pub_data script to /home/rokey/rokey4_C1_ws/install/carbot/lib/carbot
+[0.532s] Installing pub_image script to /home/rokey/rokey4_C1_ws/install/carbot/lib/carbot
+[0.532s] Installing show_data script to /home/rokey/rokey4_C1_ws/install/carbot/lib/carbot
+[0.533s] Installing show_image script to /home/rokey/rokey4_C1_ws/install/carbot/lib/carbot
+[0.533s] Installing yolo_pub_wc script to /home/rokey/rokey4_C1_ws/install/carbot/lib/carbot
+[0.533s] Installing yolo_sub_wc script to /home/rokey/rokey4_C1_ws/install/carbot/lib/carbot
+[0.533s] writing list of installed files to '/home/rokey/rokey4_C1_ws/build/carbot/install.log'
+[0.546s] Invoked command in '/home/rokey/rokey4_C1_ws/src/carbot' returned '0': PYTHONPATH=/home/rokey/rokey4_C1_ws/build/carbot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rokey/rokey4_C1_ws/install/carbot/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/carbot build --build-base /home/rokey/rokey4_C1_ws/build/carbot/build install --record /home/rokey/rokey4_C1_ws/build/carbot/install.log --single-version-externally-managed install_data

@@ -1,0 +1,56 @@
+from setuptools import find_packages, setup
+
+package_name = 'carbot'
+
+setup(
+    name=package_name,
+    version='0.0.0',
+    packages=find_packages(exclude=['test']),
+    data_files=[
+        ('share/ament_index/resource_index/packages',
+            ['resource/' + package_name]),
+        ('share/' + package_name, ['package.xml']),
+    ],
+    install_requires=['setuptools'],
+    zip_safe=True,
+    maintainer='rokey',
+    maintainer_email='rokey@todo.todo',
+    description='TODO: Package description',
+    license='TODO: License declaration',
+    tests_require=['pytest'],
+    entry_points={
+        'console_scripts': [
+            'pub_image = day2.2_0_a_image_publisher:main',
+            'show_image = day2.2_0_b_image_subscriber:main',
+            'pub_data = day2.2_0_c_data_publisher:main',
+            'show_data = day2.2_0_d_data_subscriber:main',
+            'cap_img = day2.2_1_d_capture_image:main',
+            'com_yolo = day2.2_4_c_compare_yolo:main',
+            'obj_det_wc = day2.2_4_d_yolov8_obj_det_wc:main',
+            'yolo_pub_wc = day2.2_4_e_yolo_publisher_wc:main',
+            'yolo_sub_wc = day2.2_4_f_yolo_subscriber_wc:main',
+            'obj_det = day2.2_4_g_yolov8_obj_det:main',
+            'obj_det_thread = day2.2_4_h_yolov8_obj_det_thread:main',
+            'obj_det_track = day2.2_4_i_yolov8_obj_det_track:main',
+            'depth_caculator = day2.depth_caculator_last:main',
+            'depth_test = day2.depth_test:main',
+            'test = day2.yolo_depth_test:main',
+            'depth_checker = day2.3_1_a_depth_checker:main', 
+            'depth_to_3d = day2.3_1_b_depth_to_3d:main', 
+            'depth_to_nav = day2.3_1_c_depth_to_nav_goal:main', 
+            'nav_to_person = day2.3_1_d_nav_to_person:main', 
+            'nav_to_pose = day2.3_2_a_nav_to_pose:main', 
+            'nav_through_pose = day2.3_2_b_nav_through_poses:main', 
+            'follow_waypoints = day2.3_2_c_follow_waypoints:main', 
+            'create_path = day2.3_2_d_create_path:main', 
+            'mail_delivery = day2.3_2_e_mail_delivery:main', 
+            'patrol_loop = day2.3_2_f_patrol_loop:main', 
+            
+            'depth_checker_2 = day2.3_3_a_depth_checker:main',
+            'depth_to_3d_ts = day2.3_3_b_depth_to_3d_ts:main',
+            'depth_to_3d_2 = day2.3_3_b_depth_to_3d:main',
+            'depth_to_nav_goal = day2.3_3_c_depth_to_nav_goal:main',
+            'nav_to_car = day2.3_3_d_nav_to_car:main',
+        ],
+    },
+)

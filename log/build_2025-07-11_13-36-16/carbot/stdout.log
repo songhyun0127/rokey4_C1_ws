@@ -1,0 +1,31 @@
+running egg_info
+creating ../../build/carbot/carbot.egg-info
+writing ../../build/carbot/carbot.egg-info/PKG-INFO
+writing dependency_links to ../../build/carbot/carbot.egg-info/dependency_links.txt
+writing entry points to ../../build/carbot/carbot.egg-info/entry_points.txt
+writing requirements to ../../build/carbot/carbot.egg-info/requires.txt
+writing top-level names to ../../build/carbot/carbot.egg-info/top_level.txt
+writing manifest file '../../build/carbot/carbot.egg-info/SOURCES.txt'
+reading manifest file '../../build/carbot/carbot.egg-info/SOURCES.txt'
+writing manifest file '../../build/carbot/carbot.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/rokey/rokey4_C1_ws/build/carbot/build
+creating /home/rokey/rokey4_C1_ws/build/carbot/build/lib
+creating /home/rokey/rokey4_C1_ws/build/carbot/build/lib/carbot
+copying carbot/__init__.py -> /home/rokey/rokey4_C1_ws/build/carbot/build/lib/carbot
+running install
+running install_lib
+creating /home/rokey/rokey4_C1_ws/install/carbot/lib/python3.10/site-packages/carbot
+copying /home/rokey/rokey4_C1_ws/build/carbot/build/lib/carbot/__init__.py -> /home/rokey/rokey4_C1_ws/install/carbot/lib/python3.10/site-packages/carbot
+byte-compiling /home/rokey/rokey4_C1_ws/install/carbot/lib/python3.10/site-packages/carbot/__init__.py to __init__.cpython-310.pyc
+running install_data
+creating /home/rokey/rokey4_C1_ws/install/carbot/share/ament_index
+creating /home/rokey/rokey4_C1_ws/install/carbot/share/ament_index/resource_index
+creating /home/rokey/rokey4_C1_ws/install/carbot/share/ament_index/resource_index/packages
+copying resource/carbot -> /home/rokey/rokey4_C1_ws/install/carbot/share/ament_index/resource_index/packages
+copying package.xml -> /home/rokey/rokey4_C1_ws/install/carbot/share/carbot
+running install_egg_info
+Copying ../../build/carbot/carbot.egg-info to /home/rokey/rokey4_C1_ws/install/carbot/lib/python3.10/site-packages/carbot-0.0.0-py3.10.egg-info
+running install_scripts
+writing list of installed files to '/home/rokey/rokey4_C1_ws/build/carbot/install.log'

@@ -1,0 +1,33 @@
+running egg_info
+writing ../../build/carbot/carbot.egg-info/PKG-INFO
+writing dependency_links to ../../build/carbot/carbot.egg-info/dependency_links.txt
+writing entry points to ../../build/carbot/carbot.egg-info/entry_points.txt
+writing requirements to ../../build/carbot/carbot.egg-info/requires.txt
+writing top-level names to ../../build/carbot/carbot.egg-info/top_level.txt
+reading manifest file '../../build/carbot/carbot.egg-info/SOURCES.txt'
+writing manifest file '../../build/carbot/carbot.egg-info/SOURCES.txt'
+running build
+running build_py
+running install
+running install_lib
+running install_data
+running install_egg_info
+removing '/home/rokey/rokey4_C1_ws/install/carbot/lib/python3.10/site-packages/carbot-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../../build/carbot/carbot.egg-info to /home/rokey/rokey4_C1_ws/install/carbot/lib/python3.10/site-packages/carbot-0.0.0-py3.10.egg-info
+running install_scripts
+Installing cap_img script to /home/rokey/rokey4_C1_ws/install/carbot/lib/carbot
+Installing com_yolo script to /home/rokey/rokey4_C1_ws/install/carbot/lib/carbot
+Installing depth_caculator script to /home/rokey/rokey4_C1_ws/install/carbot/lib/carbot
+Installing depth_test script to /home/rokey/rokey4_C1_ws/install/carbot/lib/carbot
+Installing obj_det script to /home/rokey/rokey4_C1_ws/install/carbot/lib/carbot
+Installing obj_det_thread script to /home/rokey/rokey4_C1_ws/install/carbot/lib/carbot
+Installing obj_det_track script to /home/rokey/rokey4_C1_ws/install/carbot/lib/carbot
+Installing obj_det_wc script to /home/rokey/rokey4_C1_ws/install/carbot/lib/carbot
+Installing pub_data script to /home/rokey/rokey4_C1_ws/install/carbot/lib/carbot
+Installing pub_image script to /home/rokey/rokey4_C1_ws/install/carbot/lib/carbot
+Installing show_data script to /home/rokey/rokey4_C1_ws/install/carbot/lib/carbot
+Installing show_image script to /home/rokey/rokey4_C1_ws/install/carbot/lib/carbot
+Installing test script to /home/rokey/rokey4_C1_ws/install/carbot/lib/carbot
+Installing yolo_pub_wc script to /home/rokey/rokey4_C1_ws/install/carbot/lib/carbot
+Installing yolo_sub_wc script to /home/rokey/rokey4_C1_ws/install/carbot/lib/carbot
+writing list of installed files to '/home/rokey/rokey4_C1_ws/build/carbot/install.log'

@@ -3,7 +3,7 @@ from rclpy.node import Node
 from rclpy.time import Time
 from rclpy.duration import Duration
 from sensor_msgs.msg import Image, CameraInfo, CompressedImage
-from geometry_msgs.msg import PointStamped, PoseStamped, Quaternion
+from geometry_msgs.msg import PointStamped, PoseStamped, Quaternion, Twist
 from cv_bridge import CvBridge
 from tf2_ros import Buffer, TransformListener
 from tf2_geometry_msgs.tf2_geometry_msgs import do_transform_point
@@ -27,6 +27,8 @@ class YoloFollower(Node):
         self.rgb_topic = f'{ns}/oakd/rgb/image_raw/compressed'
         self.depth_topic = f'{ns}/oakd/stereo/image_raw'
         self.info_topic = f'{ns}/oakd/rgb/camera_info'
+
+        self.cmd_vel_pub = self.create_publisher(Twist, f'{ns}/cmd_vel', 10)
 
         self.rgb_image = None
         self.depth_image = None
@@ -102,12 +104,17 @@ class YoloFollower(Node):
 
             if label.lower() != 'car':
                 continue
+            
+            # 박스 그리기
+            cv2.rectangle(rgb, (x1, y1), (x2, y2), (0, 255, 0), 2)
+            text = f"{label} {conf:.2f}"
+            cv2.putText(rgb, text, (x1, y1 - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 2)
 
             u = (x1 + x2) // 2
             v = (y1 + y2) // 2
             z = float(depth[v, u]) / 1000.0  # Convert mm to meters if necessary
 
-            if not (0.2 < z < 5.0):
+            if not (0.3 < z < 5.0):
                 self.get_logger().warn("Invalid depth value")
                 continue
 
@@ -117,26 +124,47 @@ class YoloFollower(Node):
             Y = (v - cy) * z / fy
             Z = z
 
+            # 거리 기반 속도 제어 파라미터
+            target_distance = 1.0  # 목표 거리 (m)
+            max_speed = 0.3        # 최대 속도 (m/s)
+            min_speed = 0.15
+
+            # 너무 가까우면 정지, 아니면 비례제어 속도 계산
+            if z < 0.4:
+                speed = 0.0
+            else:
+                speed = max(min_speed, min(max_speed, (z - target_distance) * 0.5))
+
+            # Twist 메시지 생성 및 속도 발행 
+            twist = Twist()
+            twist.linear.x = speed
+
+            # 속도 버블리시
+            self.cmd_vel_pub.publish(twist)
+            
+            # 화면 출력
+            self.get_logger().info(f"[car] z={z:.2f}m → speed={speed:.2f} m/s")
+
             pt_camera = PointStamped()
             pt_camera.header.stamp = Time().to_msg()
             pt_camera.header.frame_id = self.camera_frame
             pt_camera.point.x, pt_camera.point.y, pt_camera.point.z = X, Y, Z
 
-            try:
-                pt_map = self.tf_buffer.transform(pt_camera, 'map', timeout=Duration(seconds=1.0))
-                goal = PoseStamped()
-                goal.header.frame_id = 'map'
-                goal.header.stamp = self.get_clock().now().to_msg()
-                goal.pose.position.x = pt_map.point.x
-                goal.pose.position.y = pt_map.point.y
-                goal.pose.orientation = Quaternion(x=0.0, y=0.0, z=0.0, w=1.0)
+            # try:
+            #     pt_map = self.tf_buffer.transform(pt_camera, 'map', timeout=Duration(seconds=1.0))
+            #     goal = PoseStamped()
+            #     goal.header.frame_id = 'map'
+            #     goal.header.stamp = self.get_clock().now().to_msg()
+            #     goal.pose.position.x = pt_map.point.x
+            #     goal.pose.position.y = pt_map.point.y
+            #     goal.pose.orientation = Quaternion(x=0.0, y=0.0, z=0.0, w=1.0)
 
-                self.get_logger().info(f"Navigating to: ({pt_map.point.x:.2f}, {pt_map.point.y:.2f})")
-                self.navigator.goToPose(goal)
+            #     self.get_logger().info(f"Navigating to: ({pt_map.point.x:.2f}, {pt_map.point.y:.2f})")
+            #     self.navigator.goToPose(goal)
 
-                break  # Navigate to first person only
-            except Exception as e:
-                self.get_logger().warn(f"TF failed: {e}")
+            #     break  # Navigate to first person only
+            # except Exception as e:
+            #     self.get_logger().warn(f"TF failed: {e}")
 
         self.display_image = rgb
 

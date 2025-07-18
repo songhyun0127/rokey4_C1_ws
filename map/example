@@ -1,0 +1,13 @@
+graph TD
+A[웹 주문 퍼블리시] --> B[/order_topic 토픽 발행]
+B --> C{robot8 이동 중?}
+C -->|Yes| D[큐에 저장 (FIFO)]
+C -->|No| E[주문 바로 실행]
+E --> F[목적지 매핑: 상품 → hub, 위치 → home]
+F --> G[waypoint로 이동 시작]
+G --> H[도착 후 대기]
+H --> I{배터리 < 40%?}
+I -->|Yes| J[dock() → 충전 후 종료]
+I -->|No| K[다음 주문 수행 or stay 이동]
+K --> L[stay 상태에서 대기 중]
+L -->|주문 수신| E

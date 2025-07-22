@@ -1,0 +1,70 @@
+{
+  "waypoints": [
+    {
+      "name": "cross",
+      "x": -0.83,
+      "y": 2.55,
+      "direction": "WEST"
+    },
+    {
+      "name": "home1", 
+      "x": 0.98, 
+      "y": 3.65, 
+      "direction": "EAST"
+    },
+    {
+      "name": "home2",
+      "x": 1.21,
+      "y": 4.93,
+      "direction": "SOUTH"
+    },
+    {
+      "name": "home3",
+      "x": -1.58,
+      "y": 4.80,
+      "direction": "EAST"
+    },
+    {
+      "name": "box",
+      "x": -1.65,
+      "y": 1.74,
+      "direction": "NORTH"
+    },
+    {
+      "name": "tape",
+      "x": -1.65,
+      "y": 1.00,
+      "direction": "NORTH"
+    },
+    {
+      "name": "protain",
+      "x": -1.65,
+      "y": 0.05,
+      "direction": "NORTH"
+    },
+    {
+      "name": "car",
+      "x": -1.65,
+      "y": -0.73,
+      "direction": "NORTH"
+    },
+    {
+      "name": "stay",
+      "x": -0.83,
+      "y": 2.0,
+      "direction": "EAST"
+    },
+    {
+      "name": "gohome",
+      "x": 0.0,
+      "y": 1.5,
+      "direction": "EAST"
+    },
+    {
+      "name": "cross2",
+      "x": -0.83,
+      "y": 2.55,
+      "direction": "EAST"
+    }
+  ]
+}
